@@ -1,0 +1,12 @@
+{% if site.blogs.size > 0 %}
+  <ul>
+    {% for blog in site.blogs %}
+      <li class="post-list-item">
+        <span class="home-date">
+          {{ blog.date | date: site.theme_config.date_format }}»
+        </span>
+        <a href="{{ blog.url | relative_url }}">{{ blog.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
