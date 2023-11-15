@@ -60,7 +60,7 @@ table,
 th,
 td {
   // width: 100%;
-  border: thin solid black;
+  border: thin solid var(--line-color);
   border-collapse: collapse;
   padding: 0.4em;
 }
@@ -99,6 +99,7 @@ img {
     --highlight: #ffecb2; // light yellow
     --code-text: #9d174d;
     --share-text: #999;
+    --line-color: #1e293b;
   }
 }
 // -------------- THEME SWITCHER -------------- //
@@ -114,6 +115,7 @@ img {
     --text-secondary: #9ca3af;
     --code-text: #91a7ff;
     --share-text: #c4c4c4;
+    --line-color: #c4c4c4;
   }
 }
 
