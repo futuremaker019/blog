@@ -6,6 +6,8 @@ layout: default
   <a href="{{ "/blog" | relative_url }}">{{ site.theme_config.back_blog_text }}</a>
 {% elsif page.tags contains "study"%}
   <a href="{{ "/study" | relative_url }}">{{ site.theme_config.back_study_text }}</a>
+{% else %}
+  <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
 {% endif %}
 
 <h1 class="post-title">{{ page.title }}</h1>
