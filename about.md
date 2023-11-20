@@ -3,4 +3,4 @@ layout: post
 title: About
 ---
 
-준바중압나더,
+준비중입니다.
