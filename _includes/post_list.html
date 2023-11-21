@@ -3,9 +3,11 @@
     {% for post in site.posts %}
       {% if post.tags contains 'study' %}
         <li class="post-list-item">
-          <span class="home-date">
-            {{ post.date | date: site.theme_config.date_format }}»
-          </span>
+          {% if site.theme_config.date_format_show == true %}
+            <span class="home-date">
+              {{ post.date | date: site.theme_config.date_format }} »
+            </span>
+          {% endif %}
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </li>
       {% endif %}

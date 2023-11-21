@@ -3,10 +3,12 @@
     {% for post in site.posts %}
       {% if post.tags contains 'blog' %}
         <li class="post-list-item">
-          <span class="home-date">
-            {{ post.date | date: site.theme_config.date_format }}»
-          </span>
-          <a href="{{ blog.url | relative_url }}">{{ post.title }}</a>
+          {% if site.theme_config.date_format_show == true %}
+            <span class="home-date">
+              {{ post.date | date: site.theme_config.date_format }}»
+            </span>
+          {% endif %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </li>
       {% endif %}
     {% endfor %}

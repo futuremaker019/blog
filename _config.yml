@@ -21,6 +21,7 @@ theme_config:
   back_home_text: '홈으로' # customize text for homepage link in post layout
   back_study_text: study 
   back_blog_text: blog 
+  date_format_show: false
   date_format: '%Y-%m-%d' # customize how date is formatted
   show_description: false # show blog description
   show_navbar: true # show horizontal navbar
@@ -57,14 +58,14 @@ plugins:
   - jekyll-feed
   - jekyll-soopr-seo-tag
 
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path
+# collections:
+#   tags:
+#     output: true
+#     permalink: /tags/:path
 
-defaults:
-  - scope:
-      path: ''
-      type: tags
-    values:
-      layout: tag
+# defaults:
+#   - scope:
+#       path: ''
+#       type: tags
+#     values:
+#       layout: tag
