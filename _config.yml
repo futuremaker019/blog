@@ -1,12 +1,12 @@
 title: futuremaker's blog
 author: Abhinav Saxena
-url: "https://futuremaker019.github.io"
+url: 'https://futuremaker019.github.io'
 description: > # description of the site (multiple lines allowed)
   Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
 
 permalink: /:slug
 
-favicon: "./logo.png" # relative path to site's favicon
+favicon: './logo.png' # relative path to site's favicon
 
 twitter:
   username: abhinav # update or delete this
@@ -16,13 +16,13 @@ twitter:
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "dark" # can be "light", "dark" or "auto"
+  appearance: 'dark' # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "홈으로" # customize text for homepage link in post layout
+  back_home_text: 'home' # customize text for homepage link in post layout
   back_study_text: study
   back_blog_text: blog
   date_format_show: false
-  date_format: "%Y-%m-%d" # customize how date is formatted
+  date_format: '%Y-%m-%d' # customize how date is formatted
   show_description: false # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
@@ -36,6 +36,7 @@ theme_config:
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
   show_blogs: true
+  credits: true
   # options for "home" page
   home:
     title_projects: Portfolio
@@ -47,7 +48,7 @@ theme_config:
     title: 컴퓨터 네트워크
 
 soopr:
-  publish_token: "pt_86c48a585d77ba8441f155e3e016788c" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  publish_token: 'pt_86c48a585d77ba8441f155e3e016788c' # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 highlighter: rouge
 

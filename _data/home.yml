@@ -8,6 +8,25 @@ navbar_entries:
   - title: study
     url: study
 
+blog_entries:
+  - title: home
+    url: 
+
+  - title: java
+    url: java
+
+  - title: spring
+    url: spring
+
+  - title: javascript
+    url: javascript
+  
+  - title: DataBase
+    url: DataBase
+  
+  - title: etc
+    url: etc
+
 project_entries:
   - title: Project 1
     url: overview-post

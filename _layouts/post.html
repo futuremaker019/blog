@@ -19,6 +19,11 @@ layout: default
 <hr>
 
 <div id="disqus_thread"></div>
+
+{% if site.theme_config.credits %}
+  {% include credits.html %}
+{% endif %}
+
 <script>
   /**
   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
