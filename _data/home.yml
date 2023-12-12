@@ -9,23 +9,23 @@ navbar_entries:
     url: study
 
 blog_entries:
-  - title: home
-    url: 
+  - title: Home
+    url: Home
 
-  - title: java
-    url: java
+  - title: Java
+    url: Java
 
-  - title: spring
-    url: spring
+  - title: SpringFramework
+    url: SpringFramework
 
-  - title: javascript
-    url: javascript
-  
-  - title: DataBase
-    url: DataBase
-  
-  - title: etc
-    url: etc
+  - title: Javascript
+    url: Javascript
+
+  - title: Database
+    url: Database
+
+  - title: ETC
+    url: ETC
 
 project_entries:
   - title: Project 1

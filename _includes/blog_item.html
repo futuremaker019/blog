@@ -1,0 +1,29 @@
+<a href="{{ "/blog" | relative_url }}">{{ site.theme_config.back_blog_text }}</a>
+
+<header>
+  <h1>{{ include.title }}</h1>
+</header>
+
+
+{% if site.posts.size > 0 %}
+  <ul>
+    {% for post in site.posts %}
+      {% if post.tags contains include.title %}
+        <li class="post-list-item">
+          {% if site.theme_config.date_format_show == true %}
+            <span class="home-date">
+              {{ post.date | date: site.theme_config.date_format }} »
+            </span>
+          {% endif %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
+
+
+
+{% if site.theme_config.credits %} 
+  {% include credits.html %} 
+{% endif %}

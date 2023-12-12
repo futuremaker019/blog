@@ -1,3 +1,49 @@
 ---
-layout: blog
+layout: default
 ---
+
+<header>
+  {% if site.theme_config.show_navbar == true %} 
+    {% include horizontal_list.html collection=site.data.home.blog_entries %}
+    <div class="dashed"></div>
+  {% endif %}
+
+  <!-- <h1>{{ site.title }}</h1>
+    {% if site.theme_config.show_description == true %}
+      <p>{{ site.description }}</p>
+    {% endif %} -->
+</header>
+
+
+{% for entry in site.data.home.blog_entries %}
+
+    {% if entry.title != 'Home' %}
+        <header>
+            <h1>{{ entry.title }}</h1>
+        </header>
+    {% endif %}
+    
+
+    {% if site.posts.size > 0 %}
+        <ul>
+            {% for post in site.posts %}
+                {% if post.tags contains entry.title %}
+                    <li class="post-list-item">
+                    {% if site.theme_config.date_format_show == true %}
+                        <span class="home-date">
+                        {{ post.date | date: site.theme_config.date_format }}»
+                        </span>
+                    {% endif %}
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endfor %}
+
+
+
+{% if site.theme_config.credits %} 
+  {% include credits.html %} 
+{% endif %}

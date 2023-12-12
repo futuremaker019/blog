@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [SpringBoot, blog]
+tags: [springboot, SpringFramework]
 ---
 
 ### 스프링 부트

@@ -30,6 +30,8 @@
 └── blog.html
 ```
 
+
+
 ### \_layout
 
 layout에서의 최상위 구조는 `default.html`이다.
@@ -155,6 +157,9 @@ navbar_entries:
 
 ### \_config.yml
 
+site.
+
+
 ### \_posts
 
 md 파일에
@@ -168,3 +173,42 @@ md 파일에
 
 - \_data
   - home.yml
+
+
+### jekyll 문법 이해
+
+#### include 
+
+`horizontal_list.html`로 `collection` 변수에 `site.data.home.blog_entries`를 담아 보낸다는 뜻
+
+`horizontal_list.html`은 `_include` 파일에 존재해야 한다. `_include` 디렉토리 내부에서 `horizontal_list.html`를 찾기때문
+
+```
+{% include horizontal_list.html collection=site.data.home.blog_entries %}
+```
+
+변수명은 다양하게 사용자가 지정할 수 있으며 아래와 같이 다양한 데이터 타입을 담을수 있는듯하다.
+
+```
+{% include blog_item.html title='Java'%}
+```
+
+blog_item.html의 내부에서는 아래와 같이 변수를 사용할 수 있다.
+
+```
+{{ include.title }}
+```
+
+해당 값은 변수이므로 for 문, if 문 등 내부에서 사용이 가능하다. (아래는 for문이며, if문도 사용 가능하다.)
+
+```
+{% if post.tags contains include.title %}
+
+    //...
+
+{% endif %}
+```
+
+더 자세한 사항은 아래 `jekyll include` 문서를 참조
+
+참고 : [https://jekyllrb-ko.github.io/docs/includes/](https://jekyllrb-ko.github.io/docs/includes/)
