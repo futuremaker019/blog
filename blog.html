@@ -14,16 +14,10 @@ layout: default
     {% endif %} -->
 </header>
 
-
+<header>
+    <h1>기술 블로그</h1>
+</header>
 {% for entry in site.data.home.blog_entries %}
-
-    {% if entry.title != 'Home' %}
-        <header>
-            <h1>{{ entry.title }}</h1>
-        </header>
-    {% endif %}
-    
-
     {% if site.posts.size > 0 %}
         <ul>
             {% for post in site.posts %}
@@ -34,14 +28,13 @@ layout: default
                         {{ post.date | date: site.theme_config.date_format }}»
                         </span>
                     {% endif %}
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <a href="{{ post.url | relative_url }}">{{entry.title}} - {{ post.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
         </ul>
     {% endif %}
 {% endfor %}
-
 
 
 {% if site.theme_config.credits %} 
