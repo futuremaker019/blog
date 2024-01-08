@@ -170,3 +170,22 @@ Transaction이 갖춰야할 특성은 4가지가 있다. 줄여서 ACID라고 �
 - 트랜잭션의 실행이 성공적으로 실행 완료된 후에는 시스템에 오류가 발생하더라도 트랜잭션에 의해 변경된 내용은 계속 보존되어야 한다.
 - 영구적으로 저장한다. 라고 할 때는 일반적으로 비휘발성 메모리에 저장함을 의미한다.
 - 기본적으로 DBMS가 보장한다.
+
+<br>
+
+---
+
+참조
+
+- [https://www.youtube.com/watch?v=sLJ8ypeHGlM](https://www.youtube.com/watch?v=sLJ8ypeHGlM)
+- 수제비 (2022) 정보처리기사 필기책
+
+
+<br>
+
+---
+
+### 추가 공부사항
+
+- `@Transactional` 동작원리
+- Isolation level
