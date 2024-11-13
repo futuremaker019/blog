@@ -11,19 +11,16 @@ navbar_entries:
 blog_entries:
   - title: Home
     url: Home
-
   - title: Java
     url: Java
-
-  - title: SpringFramework
-    url: SpringFramework
-
+  - title: Spring
+    url: Spring
   - title: Javascript
     url: Javascript
-
   - title: Database
     url: Database
-
+  - title: Infra
+    url: Infra
   - title: ETC
     url: ETC
 

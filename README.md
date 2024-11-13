@@ -30,7 +30,9 @@
 └── blog.html
 ```
 
+---
 
+<br>
 
 ### \_layout
 
@@ -92,6 +94,9 @@ layout: default
 layout: default
 ---
 ```
+---
+
+<br>
 
 ### header
 
